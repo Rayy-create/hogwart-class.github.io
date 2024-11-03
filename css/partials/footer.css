@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* VARIABLE CSS */
+:root {
+  /* background colors */
+  --bg-color-1: #a4bad6;
+  --bg-color-2: #e8eef5;
+  --bg-color-3: #dde8f7;
+  --bg-dropdown: #F4FAFF;
+  /*#f2f2f8*/
+
+  /* font colors */
+  --color-1: #143a6a;
+  --color-2: #011D31;
+  --color-3: #7798c1;
+  /*hover navbar*/
+  /*#a4bad6*/
+  --color-4: #e8eef5;
+
+  /* Button colors */
+  --btn-color-1: #3677b0;
+  --btn-color-2: #3c84c4;
+
+  /* Button hover */
+  --link-color-1: #19a6f3;
+  --link-color-2: #0767a2;
+
+  /* Fonts Bold */
+  --bold-1: 300;
+  --bold-2: 400;
+  --bold-3: 600;
+  --bold-4: 900;
+}
+
+#footer {
+  /* height: 100vh; */
+  background-color: var(--bg-color-1);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px 0;
+  /* box-shadow: 0px -0.2px 5px var(--color-2); */
+  font-family: 'Poppins', sans-serif;
+  border-radius: 0 0 15px 15px;
+}
+
+.logo-footer-container {
+  display: flex;
+  justify-content: center;
+  width: 55px !important;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo-footer {
+  width: 80px;
+  height: auto;
+  margin: 2px 0 0 0;
+  /*transform: translateY(-15px);*/
+  font-family: 'Poppins', sans-serif;
+}
+
+.title-footer {
+  display: flex;
+  margin-top: 13px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#footer .footer-subcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-subcontainer:first-child>div {
+  display: flex;
+  padding: 0 0 10px 0;
+  /* background-color: #0001; */
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-subcontainer>span {
+  padding: 5px 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-subcontainer>span>a {
+  text-decoration: none;
+  color: #202020;
+  transition: 0.2s;
+  font-size: 17pt;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-subcontainer>span>a:hover {
+  color: var(--bg-color-2);
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-subcontainer:last-child {
+  padding: 15px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-subcontainer:last-child>span {
+  font-size: 12pt;
+  font-family: 'Poppins', sans-serif;
+}
+
+.donation-icon {
+  margin: 10px 0 0 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.donation-link {
+  font-size: 14pt;
+  color: #202020;
+  margin: 0 10px;
+  transition: 0.2s;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.donation-link:hover {
+  color: var(--bg-color-2);
+}
+
+.donate-logo {
+  padding-right: 5px;
+}
+
+.socmed-icon {
+  margin: 10px 0 0 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.socmed-logo {
+  font-size: 18pt;
+  color: #202020;
+  margin: 0 5px;
+  transition: 0.2s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.socmed-logo:hover {
+  color: var(--bg-color-2);
+}
+
+@media screen and (max-width: 576px) {
+  .footer-subcontainer>span {
+    padding: 5px 8px;
+  }
+
+  .footer-subcontainer>span a {
+    font-size: 10pt;
+  }
+
+  .socmed-icon .bi {
+    font-size: 20px;
+  }
+
+  .donation-link {
+    font-size: 13pt;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .footer-subcontainer>span {
+    padding: 5px 5px;
+  }
+
+  .footer-subcontainer>span a {
+    font-size: 9pt;
+  }
+
+  .socmed-icon .bi {
+    font-size: 16px;
+  }
+
+  .donation-link {
+    font-size: 11pt;
+  }
+}

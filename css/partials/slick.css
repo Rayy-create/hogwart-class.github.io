@@ -1,0 +1,14 @@
+.identification-img-section{
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.identification-img-section .slick-slide{
+  opacity: 1;
+  transition: opacity 0.5 ease;
+  pointer-events: none;
+}
+.identification-img-section .slick-center{
+  opacity: 1 !important;
+  pointer-events: auto;
+}

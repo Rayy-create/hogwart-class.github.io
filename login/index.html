@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Login CSS -->
+  <link rel="stylesheet" href="../css/login.css" class="rel">
+  <!-- FAV Icons -->
+  <link rel="shortcut icon" href="../foto/favicon.ico" type="image/x-icon">
+  <!-- Bootstrap Icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- BOOTSRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <title>EGRIMELVE | Masuk</title>
+</head>
+
+<body>
+  <header></header>
+  <section class="login-container main">
+    <div class="login-left-container pt-5">
+      <div class="login-left">
+        <a href="../">
+          <img class="login-img1" src="../image/main-logo.png" alt="">
+        </a>
+        <h2 class="login-left-title">Unity of Egrimelve</h2>
+        <p class="login-left-description">Bergabung dengan kami. <br> Mulai hal baru dan nikmati fiturnya!</p>
+        <!-- <p class="signup-description">Mulai hal baru dan nikmati fiturnya!</p> -->
+        <div class="login-img-container">
+          <img class="login-img2" src="../image/icon-login.svg" alt="">
+        </div>
+        <div class="login-icon-sosmed">
+          <i class="bi bi-envelope"></i>
+          <a href="https://instagram.com/egrimelve_class" target="_blank" class="socmed-link ig-link"><i class="bi bi-instagram socmed-logo ig-logo"></i></a>
+          <a href="https://discord.gg/GzVM6rAm/" target="_blank" class="socmed-link dc-link"><i class="bi bi-discord socmed-logo dc-logo"></i></a>
+        </div>
+        <p class="login-copyright">Copyright @ 2022. Unity of Science Six. All rights reserved</p>
+      </div>
+    </div>
+    <div class="login-right-container">
+      <div class="login-right">
+        <div class="login-main-title container-sm">
+          <h4 class="login-right-title">Masuk Untuk Mendapatkan Akses Lebih!</h4>
+          <h4 class="login-right-title-mobile">Selamat Datang Kembali!</h4>
+          <p class="login-right-description">Masukan data dengan benar!</p>
+          <p class="login-right-description-mobile">Masuk dan Nikmati Fiturnya</p>
+        </div>
+        <div class="error-container mt-5"></div>
+        <form class="form container-sm">
+          <label for="email-input">Email</label> <!--<span class="text-danger">&ast;</span>-->
+          <input type="text" autocomplete="off" id="email-input" class="form-control" placeholder="Masukan email">
+          <label for="password-input">Kata sandi</label> <!--<span class="text-danger">&ast;</span>-->
+          <div class="password-group-container input-group">
+            <input type="password" name="password" autocomplete="off" id="password-input" placeholder="Masukan sandi" class="form-control">
+            <span class="password-eye input-group-text"><i class="bi bi-eye-slash"></i></span>
+          </div>
+          <div class="remember-me-container form-check">
+            <input class="remember-me form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">Ingat saya</label>
+          </div>
+          <span class="forget-password pt-2 d-block">Lupa password&quest; <a href="./new-password/">ganti password</a></span>
+          <div class="form-btn-container">
+            <input type="submit" class="form-btn mt-4" value="Masuk">
+          </div>
+        </form>
+        <div class="login-main-title container-sm">
+          <h4 class="login-confirm">
+            Belum memiliki akun?
+            <a class="login-confirm-masuk" href="../signup/">Buat akun</a> <br>
+            <a href="../new-password/" class="login-lupa-sandi">Lupa kata sandi?</a>
+          </h4>
+          <h4 class="login-confirm">
+            <a class="login-confirm-masuk" href="../teacher-login/">Masuk sebagai guru</a> <br>
+            <!-- <a href="./new-password/" class="login-lupa-sandi">Lupa kata sandi?</a> -->
+          </h4>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!-- <script src="../js/utils/toggle-password.js"></script>-->
+  <script type="module" src="./js/login.js"></script>
+</body>
+
+</html>

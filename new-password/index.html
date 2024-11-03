@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Signup CSS -->
+  <link rel="stylesheet" href="../../css/new-password.css" class="rel">
+    <!-- FAV Icons -->
+  <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap Icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- BOOTSRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <title>EGRIMELVE | Password Baru</title>
+</head>
+<body>
+  <header></header>
+  <section class="new-password-container main">
+    <div class="new-password-left-container pt-5">
+      <div class="new-password-left">
+        <a href="../../">
+          <img class="new-password-img1" src="../../images/main-logo.png" alt="">
+        </a>
+        <h2 class="new-password-left-title">Unity of Egrimelve</h2>
+        <p class="new-password-left-description">Bergabung dengan kami. <br> Mulai hal baru dan nikmati fiturnya!</p>
+        <div class="new-password-img-container">
+          <!--images nya-->
+          <img class="new-password-img2" src="../../image/verify-email.svg" alt="">
+        </div>
+        <div class="new-password-icon-sosmed">
+          <i class="bi bi-envelope"></i>
+          <a href="https://instagram.com/egrimelve_class" target="_blank" class="socmed-link ig-link"><i class="bi bi-instagram socmed-logo ig-logo"></i></a>
+          <a href="https://discord.gg/GzVM6rAm/" target="_blank" class="socmed-link dc-link"><i class="bi bi-discord socmed-logo dc-logo"></i></a>
+        </div>
+          <p class="new-password-copyright">Copyright @ 2022. Unity of Egrimelve. All rights reserved</p>
+      </div>
+    </div>
+    <div class="new-password-right-container">
+      <div class="new-password-right">
+        <div class="new-password-main-title container-sm">
+          <h4 class="new-password-right-title">Verifikasi Email</h4>
+          <p class="new-password-right-description">Masukan alamat email yang terkait dengan akun anda!</p>
+        </div>
+        <div class="error-alert-container mt-5"></div>
+        <div class="form-spinner-container">
+          <div class="form-spinner container spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+        <div class="form-container">
+                    <form class="form form-email form-1 form-hidden container-sm">
+          <label for="email-input" class="email-label">Alamat email</label>
+          <div class="email-group input-group mb-3">
+            <span class="input-group-text input-group-text-email" id="basic-addon1">
+              <i class="bi bi-envelope"></i>
+            </span>
+            <input type="email" id="email-input" class="form-control" placeholder="Masukan email" autocomplete="off" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <div class="btn-container">
+            <input type="submit" value="Dapatkan Kode" class="submit-btn submit-btn-email btn btn-primary mt-1">
+          </div>
+        </form>
+        <form class="form form-otp form-2 form-hidden container-sm">
+          <div class="otp-input-container">
+            <input type="number" class="otp-input form-control" autocomplete="off">
+            <input type="number" class="otp-input form-control" autocomplete="off">
+            <input type="number" class="otp-input form-control" autocomplete="off">
+            <input type="number" class="otp-input form-control" autocomplete="off">
+            <input type="number" class="otp-input form-control" autocomplete="off">
+            <input type="number" class="otp-input form-control" autocomplete="off">
+          </div>
+          <div class="btn-container">
+            <input type="submit" value="Verifikasi dan Proses" class="submit-btn submit-btn-otp btn btn-primary mt-1">
+            </div>
+            <div class="resend-otp-container">
+              <span class="resend-otp-text">Tidak menerima kode OTP? <a href="./resend-otp/" class="a-resend-otp-text">Kirim Ulang</a></span>
+            </div>
+          </form>
+          <form class="form form-password form-3 form-hidden container-sm">
+            <label for="cpassword-input">Kata sandi</label>
+            <div class="password-group-container input-group">
+              <input type="password" name="password" autocomplete="off" id="password-input" placeholder="Masukan sandi" class="form-control">
+              <span class="password-eye input-group-text"><i class="bi bi-eye-slash"></i></span>
+            </div>
+            <label for="cpassword-input">Konfirmasi kata sandi</label>
+            <div class="cpassword-group-container input-group">
+              <input type="password" name="cpassword" autocomplete="off" id="cpassword-input" placeholder="Masukan sandi" class="form-control">
+              <span class="cpassword-eye input-group-text"><i class="bi bi-eye-slash"></i></span>
+            </div>
+            <div class="btn-container">
+              <input type="submit" value="Atur Ulang Kata Sandi" class="submit-btn submit-btn-password btn btn-primary mt-1">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+ </section>
+   <script type="module" src="./js/new-password.js"></script>
+</body>
+</html>

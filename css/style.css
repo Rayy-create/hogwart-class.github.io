@@ -980,7 +980,7 @@ header {
   .all-person-section{
     box-sizing: border-box;
     position: absolute;
-    right: 50px;
+    right: 0;
   }
 
   .nick-person {
@@ -990,7 +990,7 @@ header {
 
   .person-desk {
     margin: 1rem;
-    font-size: 10px;
+    font-size: 0.8rem;
     font-weight: var(--bold-2);
   }
 
